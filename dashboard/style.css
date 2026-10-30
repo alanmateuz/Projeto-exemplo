@@ -1,0 +1,102 @@
+:root {
+  --fundo: #f5f6f8;
+  --card: #ffffff;
+  --texto: #1c1f24;
+  --suave: #5b6270;
+  --borda: #e2e5ea;
+  --cor-1: #2a6fdb;
+  --cor-2: #d9822b;
+  --positivo: #1f8a4c;
+  --negativo: #c23b3b;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #121418;
+    --card: #1b1e24;
+    --texto: #e8eaee;
+    --suave: #a0a7b4;
+    --borda: #2c313a;
+    --cor-1: #6ea3f5;
+    --cor-2: #f0a65a;
+    --positivo: #4cc27f;
+    --negativo: #f07474;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.topo, main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.topo { padding-top: 24px; }
+.topo h1 { margin: 0; font-size: 1.6rem; }
+.atualizado { margin: 4px 0 20px; color: var(--suave); }
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.card {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.kpi .rotulo { color: var(--suave); font-size: 0.85rem; }
+.kpi .valor { font-size: 1.7rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+.kpi .variacao { font-size: 0.85rem; font-weight: 600; }
+.kpi .variacao.sobe { color: var(--positivo); }
+.kpi .variacao.desce { color: var(--negativo); }
+
+.graficos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 760px) {
+  .graficos { grid-template-columns: 1fr; }
+}
+
+figcaption { font-weight: 600; margin-bottom: 8px; }
+
+.legenda { display: flex; gap: 16px; font-size: 0.85rem; color: var(--suave); margin-bottom: 8px; }
+.legenda .item::before {
+  content: "";
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 2px;
+  margin-right: 6px;
+}
+.legenda .acessos::before { background: var(--cor-1); }
+.legenda .vendas::before { background: var(--cor-2); }
+
+.grafico svg { display: block; width: 100%; height: auto; }
+.grafico text { fill: var(--suave); font-size: 11px; }
+.grafico .grade { stroke: var(--borda); }
+
+.erro {
+  background: var(--card);
+  border: 1px solid var(--negativo);
+  color: var(--negativo);
+  border-radius: 10px;
+  padding: 12px 16px;
+}
