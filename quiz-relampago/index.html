@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Relâmpago</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <section id="screen-start" class="screen" aria-labelledby="start-title">
+      <p class="eyebrow">10 perguntas · 15 segundos cada</p>
+      <h1 id="start-title">Quiz Relâmpago</h1>
+      <p class="lead">Responda rápido. Use o mouse ou as teclas <kbd>1</kbd> a <kbd>4</kbd>.</p>
+      <p id="load-status" class="status" role="status"></p>
+      <button id="btn-start" class="btn btn-primary" disabled>Carregando perguntas…</button>
+    </section>
+
+    <section id="screen-question" class="screen" aria-labelledby="q-prompt" hidden>
+      <header class="q-header">
+        <span id="q-count" class="q-count">Pergunta 1 de 10</span>
+        <span id="q-category" class="tag">ciencia</span>
+        <span id="q-timer" class="timer" aria-live="off">15</span>
+      </header>
+      <div class="progress" role="progressbar" aria-label="Progresso do quiz" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <div class="time-track" aria-hidden="true"><div id="time-bar" class="time-bar"></div></div>
+      <h2 id="q-prompt" class="q-prompt"></h2>
+      <ol id="q-options" class="options"></ol>
+      <div id="feedback" class="feedback" role="status" hidden>
+        <p id="feedback-title" class="feedback-title"></p>
+        <p id="feedback-text" class="feedback-text"></p>
+        <button id="btn-next" class="btn btn-primary">Próxima</button>
+      </div>
+    </section>
+
+    <section id="screen-result" class="screen" aria-labelledby="result-title" hidden>
+      <p class="eyebrow">Resultado</p>
+      <h2 id="result-title" class="result-score"></h2>
+      <dl class="stats">
+        <div><dt>Acertos</dt><dd id="stat-hits"></dd></div>
+        <div><dt>Tempo médio</dt><dd id="stat-time"></dd></div>
+        <div><dt>Sem resposta</dt><dd id="stat-timeouts"></dd></div>
+      </dl>
+      <button id="btn-restart" class="btn btn-primary">Jogar de novo</button>
+    </section>
+  </main>
+</body>
+</html>
