@@ -132,6 +132,7 @@ kbd {
 .time-bar { width: 100%; background: var(--text-muted); }
 
 .q-prompt { font-size: 1.375rem; }
+.q-prompt:focus { outline: none; }
 
 .options {
   display: grid;

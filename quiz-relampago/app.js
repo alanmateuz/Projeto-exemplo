@@ -86,7 +86,7 @@ function renderQuestion() {
   );
 
   $('feedback').hidden = true;
-  list.querySelector('.option').focus();
+  $('q-prompt').focus();
   startTimer();
 }
 
@@ -167,6 +167,7 @@ function renderResult() {
 
 document.addEventListener('keydown', (event) => {
   if (screens.question.hidden || answered) return;
+  if (event.repeat || event.ctrlKey || event.altKey || event.metaKey) return;
   const n = Number(event.key);
   if (Number.isInteger(n) && n >= 1 && n <= round[index].options.length) {
     event.preventDefault();
