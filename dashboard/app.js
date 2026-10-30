@@ -36,7 +36,10 @@ function renderKpis(kpis) {
 }
 
 function renderLinha(serie) {
-  const W = 640, H = 260, m = { t: 10, r: 10, b: 28, l: 44 };
+  const area = document.getElementById("grafico-linha");
+  // Desenha na largura real do container para os rótulos não encolherem no celular.
+  const W = Math.max(280, area.clientWidth), H = W < 480 ? 220 : 260, m = { t: 10, r: 10, b: 28, l: 44 };
+  const passoData = W < 480 ? 4 : 2;
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
   const max = Math.max(...serie.flatMap((p) => [p.acessos, p.vendas * ESCALA_VENDAS])) * 1.1;
   const x = (i) => m.l + (i / (serie.length - 1)) * iw;
@@ -49,7 +52,7 @@ function renderLinha(serie) {
     svg.append(el("text", { x: m.l - 6, y: y(v) + 4, "text-anchor": "end" }, fmt.format(Math.round(v))));
   }
   serie.forEach((p, i) => {
-    if (i % 2 === 0) svg.append(el("text", { x: x(i), y: H - 8, "text-anchor": "middle" }, fmtData(p.dia)));
+    if (i % passoData === 0) svg.append(el("text", { x: x(i), y: H - 8, "text-anchor": "middle" }, fmtData(p.dia)));
   });
 
   const linha = (campo, cor, mult) => {
@@ -64,7 +67,7 @@ function renderLinha(serie) {
   linha("acessos", "--cor-1", 1);
   linha("vendas", "--cor-2", ESCALA_VENDAS);
 
-  document.getElementById("grafico-linha").replaceChildren(svg);
+  area.replaceChildren(svg);
 }
 
 function renderBarras(categorias) {
@@ -97,6 +100,12 @@ async function iniciar() {
     renderKpis(dados.kpis);
     renderLinha(dados.serie_diaria);
     renderBarras(dados.por_categoria);
+    let largura = innerWidth;
+    addEventListener("resize", () => {
+      if (innerWidth === largura) return;
+      largura = innerWidth;
+      renderLinha(dados.serie_diaria);
+    });
   } catch (e) {
     const erro = document.getElementById("erro");
     erro.textContent = "Não foi possível carregar data/metrics.json (" + e.message + "). Abra o painel por um servidor local.";
