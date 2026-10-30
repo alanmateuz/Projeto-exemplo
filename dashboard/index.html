@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel de Métricas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Painel de Métricas</h1>
+    <p class="atualizado">Atualizado em <time id="atualizado-em">—</time></p>
+  </header>
+
+  <main>
+    <section class="kpis" id="kpis" aria-label="Indicadores principais"></section>
+
+    <section class="graficos">
+      <figure class="card">
+        <figcaption>Acessos e vendas por dia</figcaption>
+        <div class="legenda">
+          <span class="item acessos">Acessos</span>
+          <span class="item vendas">Vendas (×20)</span>
+        </div>
+        <div id="grafico-linha" class="grafico" role="img" aria-label="Gráfico de linha de acessos e vendas por dia"></div>
+      </figure>
+
+      <figure class="card">
+        <figcaption>Vendas por categoria</figcaption>
+        <div id="grafico-barras" class="grafico" role="img" aria-label="Gráfico de barras de vendas por categoria"></div>
+      </figure>
+    </section>
+
+    <p id="erro" class="erro" hidden></p>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
