@@ -1,0 +1,425 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "q001",
+      "category": "ciencia",
+      "difficulty": 1,
+      "prompt": "Qual planeta é conhecido como planeta vermelho?",
+      "options": [
+        "Vênus",
+        "Marte",
+        "Júpiter",
+        "Saturno"
+      ],
+      "answerIndex": 1,
+      "explanation": "A cor vem do óxido de ferro na superfície."
+    },
+    {
+      "id": "q002",
+      "category": "ciencia",
+      "difficulty": 1,
+      "prompt": "Qual gás as plantas absorvem na fotossíntese?",
+      "options": [
+        "Oxigênio",
+        "Nitrogênio",
+        "Gás carbônico",
+        "Hélio"
+      ],
+      "answerIndex": 2,
+      "explanation": "As plantas usam CO2, água e luz para produzir glicose."
+    },
+    {
+      "id": "q003",
+      "category": "ciencia",
+      "difficulty": 2,
+      "prompt": "Qual é o símbolo químico do ouro?",
+      "options": [
+        "Ag",
+        "Au",
+        "Go",
+        "Or"
+      ],
+      "answerIndex": 1,
+      "explanation": "Au vem do latim aurum."
+    },
+    {
+      "id": "q004",
+      "category": "ciencia",
+      "difficulty": 2,
+      "prompt": "Quantos ossos tem o corpo humano adulto?",
+      "options": [
+        "186",
+        "206",
+        "226",
+        "256"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bebês nascem com mais ossos, que se fundem com o tempo."
+    },
+    {
+      "id": "q005",
+      "category": "ciencia",
+      "difficulty": 3,
+      "prompt": "Qual partícula tem carga elétrica negativa?",
+      "options": [
+        "Próton",
+        "Nêutron",
+        "Elétron",
+        "Fóton"
+      ],
+      "answerIndex": 2,
+      "explanation": "O elétron orbita o núcleo e tem carga negativa."
+    },
+    {
+      "id": "q006",
+      "category": "ciencia",
+      "difficulty": 3,
+      "prompt": "Qual é a velocidade aproximada da luz no vácuo?",
+      "options": [
+        "300 mil km/s",
+        "30 mil km/s",
+        "3 mil km/s",
+        "3 milhões km/s"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cerca de 299.792 km por segundo."
+    },
+    {
+      "id": "q007",
+      "category": "historia",
+      "difficulty": 2,
+      "prompt": "Em que ano o Brasil proclamou a independência?",
+      "options": [
+        "1500",
+        "1808",
+        "1822",
+        "1889"
+      ],
+      "answerIndex": 2,
+      "explanation": "Dom Pedro I proclamou a independência em 7 de setembro de 1822."
+    },
+    {
+      "id": "q008",
+      "category": "historia",
+      "difficulty": 1,
+      "prompt": "Quem foi o primeiro presidente do Brasil?",
+      "options": [
+        "Getúlio Vargas",
+        "Deodoro da Fonseca",
+        "Floriano Peixoto",
+        "Prudente de Morais"
+      ],
+      "answerIndex": 1,
+      "explanation": "Deodoro assumiu após a Proclamação da República em 1889."
+    },
+    {
+      "id": "q009",
+      "category": "historia",
+      "difficulty": 2,
+      "prompt": "Em que ano caiu o Muro de Berlim?",
+      "options": [
+        "1979",
+        "1985",
+        "1989",
+        "1991"
+      ],
+      "answerIndex": 2,
+      "explanation": "A queda ocorreu em 9 de novembro de 1989."
+    },
+    {
+      "id": "q010",
+      "category": "historia",
+      "difficulty": 1,
+      "prompt": "Qual civilização construiu as pirâmides de Gizé?",
+      "options": [
+        "Romana",
+        "Grega",
+        "Egípcia",
+        "Maia"
+      ],
+      "answerIndex": 2,
+      "explanation": "Foram erguidas no Egito Antigo há mais de 4.500 anos."
+    },
+    {
+      "id": "q011",
+      "category": "historia",
+      "difficulty": 3,
+      "prompt": "Qual tratado dividiu as terras descobertas entre Portugal e Espanha?",
+      "options": [
+        "Versalhes",
+        "Tordesilhas",
+        "Madri",
+        "Utrecht"
+      ],
+      "answerIndex": 1,
+      "explanation": "Assinado em 1494, definiu uma linha imaginária no Atlântico."
+    },
+    {
+      "id": "q012",
+      "category": "historia",
+      "difficulty": 3,
+      "prompt": "Em que ano foi assinada a Lei Áurea?",
+      "options": [
+        "1850",
+        "1871",
+        "1888",
+        "1891"
+      ],
+      "answerIndex": 2,
+      "explanation": "A Lei Áurea aboliu a escravidão no Brasil em 13 de maio de 1888."
+    },
+    {
+      "id": "q013",
+      "category": "geografia",
+      "difficulty": 1,
+      "prompt": "Qual é o maior oceano do planeta?",
+      "options": [
+        "Atlântico",
+        "Índico",
+        "Ártico",
+        "Pacífico"
+      ],
+      "answerIndex": 3,
+      "explanation": "O Pacífico cobre cerca de um terço da superfície da Terra."
+    },
+    {
+      "id": "q014",
+      "category": "geografia",
+      "difficulty": 1,
+      "prompt": "Qual é a capital da Argentina?",
+      "options": [
+        "Santiago",
+        "Montevidéu",
+        "Buenos Aires",
+        "Lima"
+      ],
+      "answerIndex": 2,
+      "explanation": "Buenos Aires fica às margens do Rio da Prata."
+    },
+    {
+      "id": "q015",
+      "category": "geografia",
+      "difficulty": 2,
+      "prompt": "Qual é o maior país do mundo em área?",
+      "options": [
+        "Canadá",
+        "China",
+        "Estados Unidos",
+        "Rússia"
+      ],
+      "answerIndex": 3,
+      "explanation": "A Rússia tem mais de 17 milhões de km²."
+    },
+    {
+      "id": "q016",
+      "category": "geografia",
+      "difficulty": 2,
+      "prompt": "Qual rio banha a cidade de Manaus?",
+      "options": [
+        "Rio Negro",
+        "Rio São Francisco",
+        "Rio Paraná",
+        "Rio Tietê"
+      ],
+      "answerIndex": 0,
+      "explanation": "Manaus fica na margem do Rio Negro, perto do encontro das águas."
+    },
+    {
+      "id": "q017",
+      "category": "geografia",
+      "difficulty": 3,
+      "prompt": "Qual é a montanha mais alta do mundo?",
+      "options": [
+        "K2",
+        "Kilimanjaro",
+        "Everest",
+        "Aconcágua"
+      ],
+      "answerIndex": 2,
+      "explanation": "O Everest tem cerca de 8.849 metros de altitude."
+    },
+    {
+      "id": "q018",
+      "category": "geografia",
+      "difficulty": 3,
+      "prompt": "Quantos estados tem o Brasil, sem contar o Distrito Federal?",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "answerIndex": 2,
+      "explanation": "São 26 estados mais o Distrito Federal."
+    },
+    {
+      "id": "q019",
+      "category": "tecnologia",
+      "difficulty": 1,
+      "prompt": "O que significa a sigla CPU?",
+      "options": [
+        "Central Processing Unit",
+        "Computer Power Unit",
+        "Core Program Utility",
+        "Central Print Unit"
+      ],
+      "answerIndex": 0,
+      "explanation": "A CPU é o processador que executa as instruções."
+    },
+    {
+      "id": "q020",
+      "category": "tecnologia",
+      "difficulty": 1,
+      "prompt": "Qual empresa desenvolve o sistema Android?",
+      "options": [
+        "Apple",
+        "Microsoft",
+        "Google",
+        "Samsung"
+      ],
+      "answerIndex": 2,
+      "explanation": "O Google comprou a Android Inc. em 2005."
+    },
+    {
+      "id": "q021",
+      "category": "tecnologia",
+      "difficulty": 2,
+      "prompt": "Quantos bits há em um byte?",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "32"
+      ],
+      "answerIndex": 1,
+      "explanation": "Um byte é formado por 8 bits."
+    },
+    {
+      "id": "q022",
+      "category": "tecnologia",
+      "difficulty": 2,
+      "prompt": "Qual linguagem roda nativamente nos navegadores?",
+      "options": [
+        "Python",
+        "Java",
+        "C#",
+        "JavaScript"
+      ],
+      "answerIndex": 3,
+      "explanation": "JavaScript é a linguagem de script padrão da web."
+    },
+    {
+      "id": "q023",
+      "category": "tecnologia",
+      "difficulty": 3,
+      "prompt": "O que significa HTTP?",
+      "options": [
+        "HyperText Transfer Protocol",
+        "High Transfer Text Process",
+        "Hyper Tool Transfer Path",
+        "Home Text Transfer Protocol"
+      ],
+      "answerIndex": 0,
+      "explanation": "É o protocolo base da comunicação na web."
+    },
+    {
+      "id": "q024",
+      "category": "tecnologia",
+      "difficulty": 3,
+      "prompt": "Quem é considerado o pai da computação?",
+      "options": [
+        "Bill Gates",
+        "Alan Turing",
+        "Steve Jobs",
+        "Tim Berners-Lee"
+      ],
+      "answerIndex": 1,
+      "explanation": "Turing formalizou os conceitos de algoritmo e computação."
+    },
+    {
+      "id": "q025",
+      "category": "cultura",
+      "difficulty": 1,
+      "prompt": "Quem pintou a Mona Lisa?",
+      "options": [
+        "Michelangelo",
+        "Leonardo da Vinci",
+        "Rafael",
+        "Van Gogh"
+      ],
+      "answerIndex": 1,
+      "explanation": "Leonardo pintou a obra no início do século XVI."
+    },
+    {
+      "id": "q026",
+      "category": "cultura",
+      "difficulty": 1,
+      "prompt": "Qual instrumento do samba tem pele e platinelas?",
+      "options": [
+        "Cuíca",
+        "Pandeiro",
+        "Surdo",
+        "Agogô"
+      ],
+      "answerIndex": 1,
+      "explanation": "O pandeiro tem pele e pequenos discos metálicos."
+    },
+    {
+      "id": "q027",
+      "category": "cultura",
+      "difficulty": 2,
+      "prompt": "Quem escreveu Dom Casmurro?",
+      "options": [
+        "José de Alencar",
+        "Machado de Assis",
+        "Clarice Lispector",
+        "Jorge Amado"
+      ],
+      "answerIndex": 1,
+      "explanation": "Machado de Assis publicou o romance em 1899."
+    },
+    {
+      "id": "q028",
+      "category": "cultura",
+      "difficulty": 2,
+      "prompt": "Em que país surgiu o tango?",
+      "options": [
+        "Espanha",
+        "Cuba",
+        "Argentina",
+        "México"
+      ],
+      "answerIndex": 2,
+      "explanation": "O tango nasceu na região do Rio da Prata no fim do século XIX."
+    },
+    {
+      "id": "q029",
+      "category": "cultura",
+      "difficulty": 3,
+      "prompt": "Quem compôs a Nona Sinfonia, com o Hino à Alegria?",
+      "options": [
+        "Mozart",
+        "Bach",
+        "Beethoven",
+        "Chopin"
+      ],
+      "answerIndex": 2,
+      "explanation": "Beethoven a concluiu em 1824, já surdo."
+    },
+    {
+      "id": "q030",
+      "category": "cultura",
+      "difficulty": 3,
+      "prompt": "Qual artista brasileira pintou Abaporu?",
+      "options": [
+        "Anita Malfatti",
+        "Tarsila do Amaral",
+        "Lygia Clark",
+        "Djanira"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tarsila pintou Abaporu em 1928, marco do modernismo."
+    }
+  ]
+}
