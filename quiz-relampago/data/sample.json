@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "q001",
+      "category": "ciencia",
+      "difficulty": 1,
+      "prompt": "Qual planeta é conhecido como planeta vermelho?",
+      "options": [
+        "Vênus",
+        "Marte",
+        "Júpiter",
+        "Saturno"
+      ],
+      "answerIndex": 1,
+      "explanation": "A cor vem do óxido de ferro na superfície."
+    },
+    {
+      "id": "q007",
+      "category": "historia",
+      "difficulty": 2,
+      "prompt": "Em que ano o Brasil proclamou a independência?",
+      "options": [
+        "1500",
+        "1808",
+        "1822",
+        "1889"
+      ],
+      "answerIndex": 2,
+      "explanation": "Dom Pedro I proclamou a independência em 7 de setembro de 1822."
+    },
+    {
+      "id": "q013",
+      "category": "geografia",
+      "difficulty": 1,
+      "prompt": "Qual é o maior oceano do planeta?",
+      "options": [
+        "Atlântico",
+        "Índico",
+        "Ártico",
+        "Pacífico"
+      ],
+      "answerIndex": 3,
+      "explanation": "O Pacífico cobre cerca de um terço da superfície da Terra."
+    }
+  ]
+}
